@@ -1,4 +1,4 @@
-let currentDayEL = $("#current-day")
+let currentDayEL = $("#currenDay")
 
 function displayTime(){
     let rightNow = moment().format("MMM DD, YYYY");
