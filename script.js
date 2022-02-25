@@ -5,6 +5,7 @@ function displayTime(){
     currentDayEL.text(rightNow);
     console.log(rightNow)
    }
+   displayTime();
 
 
 
