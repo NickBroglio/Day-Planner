@@ -1,12 +1,11 @@
-let currentDayEL = $("#currenDay")
+let currentDayEL = $("#currentDay")
 
 function displayTime(){
     let rightNow = moment().format("MMM DD, YYYY");
     currentDayEL.text(rightNow);
-    
-};
-console.log(rightNow)
-displayTime();
+    console.log(rightNow)
+   }
+
 
 
 // if block is past current date display block as red
