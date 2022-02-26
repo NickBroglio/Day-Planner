@@ -1,16 +1,22 @@
-let currentDayEL = $("#currentDay")
-
-function displayTime(){
-    let rightNow = moment().format("MMM DD, YYYY");
-    currentDayEL.text(rightNow);
-    console.log(rightNow)
-   }
-   displayTime();
+let currentTime = $("#currentDay").text(moment().format("MMM DD, YYYY"));
+let rightNow = parseInt(moment().format('HH'));
 
 
-
-// if block is past current date display block as red
-// if(rightNow < )
-// if block is current date display block as blue
-
-// if block is not past current date display black as green
+$("textarea").each(function(){
+    let time = parseInt($(this).attr("time"));
+    if(time < rightNow){
+        $(this).removeClass("future");
+        $(this).removeClass("present");
+        $(this).addClass("past");
+    }
+    else if(time === rightNow){
+        $(this).removeClass("future");
+        $(this).addClass("present");
+        $(this).removeClass("past");
+    }
+    else {
+        $(this).addClass("future");
+        $(this).removeClass("present");
+        $(this).removeClass("past");
+    }
+});
