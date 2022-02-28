@@ -41,4 +41,5 @@ $("#hour-12 .text").val(localStorage.getItem("hour-12"));
 $("#hour-13 .text").val(localStorage.getItem("hour-13"));
 $("#hour-14 .text").val(localStorage.getItem("hour-14"));
 $("#hour-15 .text").val(localStorage.getItem("hour-15"));
-
+$("#hour-16 .text").val(localStorage.getItem("hour-16"));
+$("#hour-17 .text").val(localStorage.getItem("hour-17"));
